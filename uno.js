@@ -1,5 +1,5 @@
 /* Alan Magariños 
-Div I
+Div I PRACTICA PARCIAL 2021
 
 1.	Se ingresan 5 importes, marca del producto y pais de origen (China, Uruguar o Paraguay).
 Calcular y mostrar:
