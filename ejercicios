@@ -1,0 +1,130 @@
+
+/*
+
+Ingresar el nombre de los 5 candidatos a presidente de Berlinberlin,
+la edad de cada uno (mayor o igual a 20 años) 
+y la cantidad de votos que sacó en las elecciones.
+Informar: 
+el candidato con más votos
+el candidato con menos votos
+el promedio de edades de los candidatos
+Cantidad de candidatos que tienen entre 25 y 50 años 
+que hayan recibido entre 500 y 900 votos.
+*/
+
+function mostrar()
+{
+	
+}
+/*Nos dedicamos a la venta exclusiva de Discos rígidos.
+Debemos realizar la carga de 5(cinco) productos, de cada uno debo obtener los 
+siguientes datos:
+Tipo: (validar "HDD", "SSD" o "SSDM2")
+Precio: (validar entre 5000 y 18000),
+Cantidad de unidades (no puede ser 0 o negativo y no debe superar las 50 Unidades).
+Marca: (validar “Seagate”, “Western Digital”, “Kingston”)
+Capacidad: (validar 250Gb, 500Gb, 1Tb, 2Tb)
+Se debe Informar al usuario lo siguiente:
+a) Del más barato de los SSD, la cantidad de unidades y marca.
+b) Del tipo HDD, el de mayor precio, capacidad de almacenamiento y cantidad de unidades
+   disponibles. 
+c) Cuántas unidades de HDD hay en total.*/
+-------------------------------------------------------------
+/* Ej 1 Cerverceria
+Una cervecería necesita realizar un sistema de ventas online, donde se calculará las
+preferencias de 10 usuarios del sitio.
+Los datos necesarios son:
+-Nombre 
+-Genero: (Masculino – Femenino –No binario)
+-Edad (validar que sea mayor a 18 años)
+-Tipo de cerveza:  Roja – Honey –Negra - Golden
+-Preferencia: (tirada – en botella)
+Calcular y mostrar en un document.write:
+a.Porcentaje de usuarios que prefieren cada tipo de cerveza.
+b.Cantidad de Mujeres entre 25 y 35 años que prefieren cerveza roja y tirada.
+c.Preferencia del Masculino de más edad que toma Golden.
+*/
+----------------------------------------------------------------------
+/* 2
+HISOPADO
+ El centro de hisopado de Ezeiza recibe una tripulación de 8 personas.
+Al ser hisopadas se ingresan sus datos en la aplicación:
+-Nacionalidad ("argentina", "extranjero")
+-Resultado ("positivo", "negativo")
+-Edad (entre 18 y 65)
+-Cepa("Delta", "Alfa", "Beta", "Ninguna")
+Para poder ingresar ninguna el resultado debe ser negativo
+Luego del ingreso informar:
+a-Porcentaje de positivos 
+b-Porcentaje de negativos
+c-Cuál es la cepa menos encontrada
+d-Edad del menor argentino contagiado
+e-Cantidad de personas extranjeras contagiadas con la delta*/
+--------------------------------------------------------------------------
+/*3
+Vacunas
+Llegan vuelos con vacunas de distintos lugares del mundo
+Mientras el usuario quiera se debe registrar de cada vuelo:
+-Origen (“Asia”, “Europa”, “América”)
+-Cantidad de vacunas (entre 500000 y 2500000)
+-Costo del vuelo (entre 1 millón y 5 millones de pesos)
+Informar:
+a- El origen que envió menor cantidad de vacunas en total
+b- El total sin descuentos a pagar por los gastos de los viajes
+c- Si en total se recibieron mas de 10 millones de vacunas se hace
+un descuento de 25%, Si se recibieron entre 5 y 10 millones el
+descuento es del 15% con menor cantidad no hay descuento.
+Informar si hubo descuento, de cuanto fue y el importe final con
+Descuento.
+La cantidad de vacunas poner entre 5 y 25 para que se sobreentienda que es por millón o cien mil
+*/
+--------------------------------------------------------------------------
+/* Partidos perdidos/GANADOS
+3.  Debemos realizar un programa que lleve el registro de los partidos jugados por nuestro equipo.
+     No se sabe cuántos.
+    Se deberá cargar en cada entrada el nombre del equipo contrario, si jugamos de local o visitante(validar) ,
+     los goles hechos por nuestro equipo y los goles hechos por el equipo contrario (validar,
+         la cantidad de goles no puede ser negativo).
+    El programa deberá evaluar la cantidad de goles de cada equipo y determinará si fue empate, victoria o derrota.
+    Al final se deberá mostrar:
+    a) el promedio(porcentaje) de victorias de nuestro equipo
+    b) cantidad de goles hechos y recibidos.
+    c) cantidad de goles realizado en nuestra primer victoria y el nombre del equipo rival
+    d) promedio de victorias como local y promedio de derrotas como visitante.
+    e) nombre y cantidad de goles del equipo que nos hizo más goles.
+
+*/
+/*
+    Realizar el algoritmo que permita ingresar los datos de una compra de productos
+    alimenticios, hasta que el cliente quiera. Por cada compra se ingresa:
+    Tipo: (validar "Yerba", "Azúcar", "Café").
+    Cantidad de bolsas. (más de cero).
+    Precio por bolsa (más de cero).
+    Si se compra más de 5 bolsas en total se obtiene un 10% de descuento sobre el total a
+    pagar.
+    Si se compra más de 10 bolsas en total se obtiene un 15% de descuento sobre el total a pagar.
+    Se pide mostrar por pantalla:
+    a) El importe total a pagar bruto, sin descuento.
+    b) El importe total a pagar con descuento (solo si corresponde)
+    c) Informar el tipo con más cantidad de bolsas.
+    d) El tipo de la compra más barata. (sobre el Bruto sin descuento)
+*/
+/*
+    Luego de la campaña de vacunación “COVID19” se realizó un censo sobre la
+    población para obtener distintos datos estadísticos:
+    Se ingresará hasta que usuario decida:
+    Nombre.
+    Edad.
+    Género: “F”, “M”, “NB”.
+    Vacuna: “SputnikV”, “AstraZeneca”, “Otra”.
+    Temperatura corporal (durante la primera noche).
+    Se pide:
+    a) El nombre y vacuna de la persona con mayor temperatura.
+    b) Cuántas personas de género Femenino recibieron la vacuna SputnikV.
+    c) La cantidad de personas de género No Binario que recibieron AstraZeneca u Otra.
+    d) Cuántas personas que se aplicaron la vacuna AstraZeneca, presentaron una temperatura
+    mayor a 38°.
+    e) El promedio de edad de los hombres que se aplicaron la vacuna SputnikV y no
+    presentaron fiebre. (37° o menos)
+*/
+

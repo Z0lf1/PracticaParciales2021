@@ -1,0 +1,140 @@
+/*
+    Vacunas 2
+    Luego de la campaña de vacunación “COVID19” se realizó un censo sobre la
+    población para obtener distintos datos estadísticos:
+    Se ingresará hasta que usuario decida:
+    Nombre.
+    Edad.
+    Género: “F”, “M”, “NB”.
+    Vacuna: “SputnikV”, “AstraZeneca”, “Otra”.
+    Temperatura corporal (durante la primera noche).
+    Se pide:
+    a) El nombre y vacuna de la persona con mayor temperatura. nombreMayorTemperatura; vacunaMayorTemperatura;
+    b) Cuántas personas de género Femenino recibieron la vacuna SputnikV. //
+    c) La cantidad de personas de género No Binario que recibieron AstraZeneca u Otra. // contadorNoBinarioAstrazenecaOtra;
+    d) Cuántas personas que se aplicaron la vacuna AstraZeneca, presentaron una temperatura 
+    mayor a 38°.
+    e) El promedio de edad de los hombres que se aplicaron la vacuna SputnikV y no
+    presentaron fiebre. (37° o menos)
+*/
+
+function mostrar()
+{
+//Variables de ingreso:
+   var nombre;
+   var edad;
+   var genero;
+   var vacuna;
+   var temperaturaCorporal;
+   
+   var mayorTemperatura;
+   var nombreMayorTemp;
+   var vacunaMayorTemp;
+
+   var contadorFemeninoSputnik=0;
+   var contadorNoBinarioVacunas=0;
+   var contadorFiebre=0;
+   var contadorBajaTemperatura=0;
+
+   var acumuladorEdadHombres=0;
+
+   var promedioEdadHombres;
+
+   var banderaMayorTemperatura=true;
+
+   var respuesta=true;
+
+   while(respuesta==true)
+   {
+      nombre=prompt("Ingrese un nombre: ");
+   
+      edad=parseInt(prompt("Ingrese un edad: "));
+      while(isNaN(edad) || edad<0)
+      {
+         edad=parseInt(prompt("Error, ingrese un edad: "));  
+      }
+   
+      genero=prompt("Ingrese un genero('f','m' o 'nb'): ");
+      while(genero!='f' && genero!='m' && genero!='nb')
+      {
+         genero=prompt("Error ingrese un genero('f','m' o 'nb'): ");
+      }
+   
+      vacuna=prompt('Ingrese una vacuna “sputnikv”, “astrazeneca”, “otra”: ');
+      while(vacuna!='sputnikv' && vacuna!='astrazeneca' && vacuna!='otra')
+      {
+         vacuna=prompt('Error, ingrese una vacuna “sputnikv”, “astrazeneca”, “otra”: ');
+      }
+   
+      temperaturaCorporal=parseInt(prompt("Ingrese su temperatura corporal: "));
+      while(isNaN(temperaturaCorporal) || temperaturaCorporal<35 || temperaturaCorporal>45)
+      {
+         temperaturaCorporal=parseInt(prompt("Error ingrese su temperatura corporal: "));
+      }
+      
+      if(temperaturaCorporal>mayorTemperatura || banderaMayorTemperatura==true)
+      {
+         mayorTemperatura=temperaturaCorporal;
+         vacunaMayorTemp=vacuna;
+         nombreMayorTemp=nombre;
+         banderaMayorTemperatura=false;
+      }
+
+      switch(genero)
+      {
+         case "f":
+         if(vacuna=="sputnikv")
+         {
+            contadorFemeninoSputnik++;
+         }
+         
+         break;
+
+         case "m":
+            if(vacuna=="sputnikv" && temperaturaCorporal<38)
+            {
+               contadorBajaTemperatura++;
+               acumuladorEdadHombres+=edad;
+            }
+
+         break;
+
+         default:
+            if(vacuna!="sputnikv")  // if(vacuna=="astrazeneca" || vacuna=="otra")
+            {
+               contadorNoBinarioVacunas++;
+            }
+         }
+
+         if(vacuna=="astrazeneca" && temperaturaCorporal>38)
+         {
+            contadorFiebre++;
+         }
+
+
+
+
+      respuesta=confirm("Desea ingresar datos?");
+   }
+
+   if(contadorBajaTemperatura>0)
+   {
+      promedioEdadHombres=acumuladorEdadHombres/contadorBajaTemperatura;
+   }
+   else
+   {
+      promedioEdadHombres=0;
+   }
+   
+   //a
+   document.write("El nombre de la persona con mayor temperatura es: "+nombreMayorTemp+" y la vacuna que tiene es: "+vacunaMayorTemp+"<br>");
+   //b
+   document.write("Las cantidad de personas de genero femenino que se hayan aplicado la vacuna sputnik: "+contadorFemeninoSputnik+"<br>");
+   //c
+   document.write("La cantidad de personas de genero no binario con la vacuna astrazeneca u otra son: "+contadorNoBinarioVacunas+"<br>");
+   //d 
+   document.write("La cantidad de  personas que se aplicaron la vacuna AstraZeneca, presentaron una temperatura mayor a 38° es: "+contadorFiebre+"<br>");
+   //e
+   document.write(" El promedio de edad de los hombres que se aplicaron la vacuna SputnikV y no presentaron fiebre. (37° o menos) es: "+promedioEdadHombres+"<br>");
+}
+//nicolas mao y la crew
