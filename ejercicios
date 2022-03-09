@@ -128,3 +128,137 @@ La cantidad de vacunas poner entre 5 y 25 para que se sobreentienda que es por m
     presentaron fiebre. (37° o menos)
 */
 
+Nos dedicamos a la venta exclusiva de Discos rígidos.
+Debemos realizar la carga de 5(cinco) productos, de cada uno debo obtener los 
+siguientes datos:
+Tipo: (validar "HDD", "SSD" o "SSDM2")
+Precio: (validar entre 5000 y 18000),
+Cantidad de unidades (no puede ser 0 o negativo y no debe superar las 50 Unidades).
+Marca: (validar “Seagate”, “Western Digital”, “Kingston”)
+Capacidad: (validar 250Gb, 500Gb, 1Tb, 2Tb)
+Se debe Informar al usuario lo siguiente:
+a) Del más barato de los SSD, la cantidad de unidades y marca.
+b) Del tipo HDD, el de mayor precio, capacidad de almacenamiento y cantidad de unidades
+   disponibles. 
+c) Cuántas unidades de HDD hay en total.
+
+
+
+
+
+ //SSD mas barato
+      
+    if(tipo=="HDD")
+    {
+	      if(precio>masCaroHdd || banderaHdd)
+	      {
+	         masCaroHdd=precio;
+	         capacidadMasCaroHdd=capacidad;
+	         cantidadMasCaroHdd=cantidadUnidades;
+	      }
+	       acumuladorHdd+=cantidadUnidades;
+    }
+	else
+	{
+	      if(precio<masBaratoSsd || banderaSsd==true)
+	      {
+	         masBaratoSsd=precio;
+	         cantidadUnidadesMasBaratoSsd=cantidadUnidades;
+	         marcaMasBaratoSsd=marca;
+	         banderaSsd=false
+	      }
+	}
+
+	[11:14 a. m., 9/3/2022] +54 9 11 6759-7638: *
+
+[11:15 a. m., 9/3/2022] +54 9 11 6759-7638: /*
+Luego de la campaña de vacunación “COVID19” se realizó
+un censo sobre la población para obtener distintos datos estadísticos:
+Se ingresará hasta que usuario decida:
+Nombre.
+Edad.
+Género: “F”, “M”, “NB”.
+Vacuna: “SputnikV”, “AstraZeneca”, “Otra”.
+Temperatura corporal (durante la primera noche).
+Se pide:  
+a) El nombre y vacuna de la persona con mayor temperatura.
+b) Cuántas personas de género Femenino recibieron la vacuna SputnikV.
+c) La cantidad de personas de género No
+ Binario que recibieron AstraZeneca u Otra.
+d) Cuántas personas que se aplicaron
+ la vacuna AstraZeneca, presentaron una temperatura mayor a 38°.
+e) El promedio de edad de los hombres
+ que se aplicaron la vacuna SputnikV y no presentaron fiebre. (37° o menos)
+*/
+[11:15 a. m., 9/3/2022] +54 9 11 6759-7638: /*
+
+
+*/
+[11:16 a. m., 9/3/2022] +54 9 11 6759-7638: /*
+3.  De los 10 empleados de una PYME se ingresan los siguientes datos:
+Nombre y apellido
+Genero del empleado ("Femenino", "Masculino", "No Binario")
+Cantidad de hijos (no puede ser un numero negativo)
+
+El programa debera mostrar:
+a. Porcentaje de empleados por cada genero.
+b. El nombre del empleado No Binario con mas cantidad de hijos.
+c. Nombre y apellido del primer empleado que no tiene hijos.
+
+Sabiendo que: 
+   *Si no tiene hijos no le corresponde asignación familiar 
+   *Si tiene un hijo le corresponde 5000
+   *Si tiene dos hijos le corresponde 8000 por sus dos hijos
+   *Y si tiene más de dos hijos le corresponde 10000
+d. Mostrar el total de dinero que debera pagar la PYME en concepto de asignaciones
+*/
+[11:17 a. m., 9/3/2022] +54 9 11 6759-7638: /* Ejercicio para practicar
+ //Navarro Juan Div H PRACTICA
+
+[11:18 a. m., 9/3/2022] +54 9 11 6759-7638: /*
+Realizar el algoritmo que permita el ingreso de 10 bolsas
+de alimento por prompt,con los kilos (validar entre 0 y 500), 
+sabor validar(carne vegetales pollo) e informar por alert:
+a) El promedio de los kilos totales.
+b) El mas liviano y su sabor
+c) La cantidad de sabor carne y el promedio de kilos de sabor
+carne
+*/
+/*Daniel Richter ej 2
+La aerolínea UTN viajes nos pide generar un software para vender sus packs de viajes, 
+la carga de datos pedirá lo
+siguiente:
+- Nombre del piloto.
+- Destino (“Ushuaia”, “Córdoba” o ”Jujuy”).
+- Cantidad de personas en el avión (tiene que ser mayor a 0 y menor 250).
+- Tipo de clase en la que viaja (promocional, turista, ejecutiva).
+Debemos informar:
+a) La clase con más pasajeros.
+b) El nombre del piloto que lleva más pasajeros a Ushuaia.
+c) El promedio de personas que usan la clase Ejecutiva.
+*/
+
+Facundo Estigarribia — Today at 1:01 AM
+Bienvenidos.
+Realizar el algoritmo que permita ingresar el nombre de un estudiante, la edad (validar) , el sexo (validar) y la nota del final (validar)
+hasta que el usuario quiera e informar al terminar el ingreso por document.write:
+a) La cantidad de varones aprobados
+b) El promedio de notas de los menores de edad
+c) El promedio de notas de los adolescentes.
+d) El promedio de notas de los mayores
+f) El promedio de notas por sexo masculino y femenino
+
+
+Facundo Estigarribia — Today at 1:03 AM
+Una agencia de autos nos contrata para generarle un software que permita el ingreso de sus autos,
+ sin limite de
+ingresos, al comenzar la carga de datos debemos pedir:
+- Marca.
+- El Peso en kg. del auto que ingresa (tiene que estar entre 917 y 3900).
+- El importe del auto en pesos (mayor a 600000).
+- Validar que tipo de auto es sedan o coupé.
+Debemos informar:
+a) Mostrar el promedio total del importe de todos los autos que ingresaron.
+b) Mostrar La marca y el importe del auto más liviano que sea sedan.
+c) El auto mas pesado que sea coupé.
+*/

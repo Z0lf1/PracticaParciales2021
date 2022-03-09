@@ -1,0 +1,113 @@
+/*
+Se ingresan 5 importes, 
+marca del producto y
+pais de origen (China, Uruguar o Paraguay).
+Calcular y mostrar:
+a. Minimo importe con su pais
+b. Maximo importe con su marca
+c. Promedio importe
+d. Cantidad de productos de China
+e. Sobre el maximo encontrado aplicar un descuento del 10% a dicho importe.
+*/
+
+    function mostrar()
+{
+	var marca="";
+	var importe
+	var pais;
+
+	var importeMin;
+	var	paisMinImporte;
+	var	banderaMinImporte = false;
+
+	var importeMax;
+	var	marcaMaxImporte;
+	var	banderaMaxImporte = false;
+
+	var promedio;
+	var acumuladorImporte=0;
+
+	var contadorChina;
+
+	var descuentoAlMax;
+
+
+	contador=0;
+
+	while(contador<5)
+	{
+		marca=prompt("Ingrese marca");
+		while(marca=="")
+		{
+			marca=prompt("ERROR. Ingrese marca");
+		}
+
+
+		importe=prompt("Ingrese importe");		
+		importe=parseInt(importe);
+		while(isNaN(importe)||importe<0)
+		{
+			importe=prompt("ERROR. Ingrese importe");
+			importe=parseInt(importe);		
+		}
+
+
+		pais=prompt("Ingrese pais");
+		while(pais!="China"&&pais!="Uruguar"&&pais!="Paraguay")
+		{
+			pais=prompt("ERROR. Ingrese pais");
+		}
+
+		//a. Minimo importe con su pais
+		if(importe < importeMin || banderaMinImporte == false)
+		{
+			importeMin = importe;
+			paisMinImporte=pais;
+			banderaMinImporte = true;
+		}
+
+		//b. Maximo importe con su marca
+		if(importe > importeMax || banderaMaxImporte == false)
+		{
+			importeMax = importe;
+			marcaMaxImporte=pais;
+			banderaMaxImporte = true;
+		}
+
+		//d. Cantidad de productos de China
+		if (pais=="China") 
+		{
+			contadorChina++;
+		}
+
+		//c. Promedio importe
+		acumuladorImporte+= importe;
+
+
+	contador++;
+
+	}
+
+	//c. Promedio importe
+	promedio= acumuladorImporte / contador;
+
+	//e. Sobre el maximo encontrado aplicar un descuento del 10% a dicho importe.
+	descuentoAlMax= importeMax - importeMax * 10/100;
+
+
+
+	document.write(" " +  + " " +  + "<br>");
+	document.write(" " +  + " " +  + "<br>");
+	document.write(" " +  + " " +  + "<br>");
+	document.write(" " +  + " " +  + "<br>");
+
+
+}
+
+/*
+a. Minimo importe con su pais
+b. Maximo importe con su marca
+c. Promedio importe
+d. Cantidad de productos de China
+e. Sobre el maximo encontrado aplicar un descuento del 10% a dicho importe.
+*/

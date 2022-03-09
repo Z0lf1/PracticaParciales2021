@@ -28,8 +28,6 @@ function mostrar()
      var banderaPRIMERAVEZ;
      var cantidadGolesPrimera;
      var contadorVictoriasLocal;
-     var contadorVictoriasVisitante;
-     
      var promedioVictorias;
      var PromedioVictoriasLocal;
      var PromedioVictoriasVisitante;
@@ -43,8 +41,6 @@ function mostrar()
 
      acumuladorGolesHechos=0;
      acumuladorGolesRecibidos=0;
-
-     contadorVictoriasVisitante=0;
      contadorVictoriasLocal=0;
      contadorVictorias=0;
      contadorDerrotas=0;
