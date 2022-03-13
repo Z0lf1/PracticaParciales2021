@@ -216,13 +216,7 @@ d. Mostrar el total de dinero que debera pagar la PYME en concepto de asignacion
  //Navarro Juan Div H PRACTICA
 
 [11:18 a. m., 9/3/2022] +54 9 11 6759-7638: /*
-Realizar el algoritmo que permita el ingreso de 10 bolsas
-de alimento por prompt,con los kilos (validar entre 0 y 500), 
-sabor validar(carne vegetales pollo) e informar por alert:
-a) El promedio de los kilos totales.
-b) El mas liviano y su sabor
-c) La cantidad de sabor carne y el promedio de kilos de sabor
-carne
+
 */
 /*Daniel Richter ej 2
 La aerolínea UTN viajes nos pide generar un software para vender sus packs de viajes, 
